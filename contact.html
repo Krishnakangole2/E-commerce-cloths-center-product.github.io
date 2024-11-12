@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08938c8f70.js" crossorigin="anonymous"></script>
+    <title>www.e-commerce.com.in</title>
+</head>
+
+<body>
+    <!--   Header section (Navigation bara)  -->
+
+    <section class="head-section">
+        <div class="left">
+            <img src="./logo.png" alt="log.com.....">
+        </div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shops</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="bag.html"><i class="fa-regular fa-bag-shopping" id="bag"></i></a></li>
+            <i id="close" class="fa-regular fa-circle-xmark"></i>
+            <li><i class="fa-solid fa-circle-half-stroke" id="mode-icon"></i></li>
+
+        </ul>
+        <div class="bar-bag">
+            <i id="bar" class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </section>
+
+    <!--  Banner container -->
+
+    <section class="blog-banner about-banner">
+        <h2>#Let's_talk</h2>
+        <p>LEAVE A MESSAGE. We love to hear from you</p>
+    </section>
+
+
+    <!--  loction container -->
+
+    <div class="loction-container">
+        <div class="loction-deatils">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations <br> or contact us today </h2>
+            <p><b>Head office</b></p>
+            <ul>
+                <li>
+                    <i class="fa-regular fa-map"></i>
+                    <p class="loc-deatil"> : Main road bangalore , near by Chatrapati shivaji maharaj chouk</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="email"> : krishnakandgole585@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="number"> : 9019887394 / 7026909873</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>: 10 : 00 AM <span> to </span> 11 : 00 PM</p>
+                </li>
+            </ul>
+        </div>
+        <div class="loction-map">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120072.86268265963!2d75.22279845721987!3d19.870523779848018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb999041be77e7%3A0xf6dde2fce7c4c07!2sKranti%20Chowk%20Chhatrapati%20Shivaji%20Maharaj%20Fountain!5e0!3m2!1sen!2sin!4v1731062950130!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!--  contact form -->
+
+    <div class="form-container">
+        <div class="left-form">
+            <p>LEVE A MESSAGE</p>
+            <h2>We love to hear from you </h2>
+            <form class="form-section" onsubmit="submitEmail(); reset(); return false;">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your full name" id="user-name" onkeyup="validname()" >
+                    <span id="errorname"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your phone number " id="user-phone" onkeyup="validphone()" >
+                    <span id="errorphone"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your Email " id="user-email" onkeyup="validemail()" >
+                    <span id="erroremail"></span>
+                </div>
+                <div class="input-box">
+                    <textarea rows="7" placeholder="Enter your message" id="user-message"onkeyup="validmsg()"></textarea>
+                    <span id="errormessage"></span>
+
+                </div>
+
+                <button type="submit" id="btn">Submit</button>
+                <p id="errorsubmit"></p>
+                <p class="submit"></p>
+            </form>
+        </div>
+        <div class="right-form">
+            <div class="clients">
+                <img src="./clientimg/f4.png" alt="first client loading image....">
+                <div class="client-deatil">
+                    <h4>Mr Krishna</h4>
+                    <p>Owner of the company</p>
+                    <p>Phone : 9019887394</p>
+                    <p>Email : krishnakandgole585@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="clients">
+                <img src="./clientimg/f5.png" alt="first client loading image....">
+                <div class="client-deatil">
+                    <h4>Mr Ram patil</h4>
+                    <p>Senior marketing manegament</p>
+                    <p>Phone : 7026909873</p>
+                    <p>Email : rampatil18@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="clients">
+                <img src="./clientimg/f1.png" alt="first client loading image....">
+                <div class="client-deatil">
+                    <h4>Mr Willes Sumith</h4>
+                    <p>Product manegment</p>
+                    <p>Phone : 7483373301</p>
+                    <p>Email : willessumith@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer  container or section  -->
+
+    <section class="footer">
+        <div class="box-footer">
+            <div class="box-footered">
+                <img src="./logo.png" alt="cara loading ....">
+                <h3>Contact</h3>
+                <ul class="contact">
+                    <li><a href="#">Address : Main road bangalore , near by Chatrapati shivaji maharaj chouk </a></li>
+                    <li><a href="#">Phone : 9019887394 / 7026909873</a></li>
+                    <li><a href="#">Time : 09 : 00AM - 09 : 00PM</a></li>
+                </ul>
+
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footered">
+                <h3>About</h3>
+                <ul class="contact">
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Delivery information</a></li>
+                    <li><a href="#">Privocy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+            <div class="box-footered">
+                <h3>My Account</h3>
+                <ul class="contact">
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">view Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Tract My Order</a></li>
+                    <li><a href="#">Help us</a></li>
+                </ul>
+            </div>
+            <div class="box-footered">
+                <h3> Install App</h3>
+                <ul class="contact">
+                    <li><a href="#">From App Store or Google Play</a></li>
+                    <li><img src="./pay/app.png" alt="app Store" class="app">
+                        <img src="./pay/play.png" alt="google play Store" class="app">
+                    </li>
+                    <li><a href="#">Securd Payment Goteways</a></li>
+                    <li> <img src="./pay/pay.png" alt="pay method loading...." class="pay"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>@2024. www.e-commerce.com/in </p>
+        </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
